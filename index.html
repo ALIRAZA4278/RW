@@ -9,6 +9,10 @@
 <body>
     <h1>Hello world this is Home page</h1>
     <a href="index.html"></a>
-    
+    <script>
+        if (typeof navigator.serviceWorker !== 'undefined') {
+          navigator.serviceWorker.register('sw.js')
+        }
+      </script>
 </body>
 </html>
